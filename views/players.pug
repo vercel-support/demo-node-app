@@ -1,0 +1,19 @@
+extends layout
+
+block content
+
+  if players.length
+    table
+      tr
+        th FirstName
+        th LastName
+        th Team
+        th Position
+      each player in players
+        tr
+          td= player.firstname
+          td= player.lastname
+          td= player.team
+          td= player.position
+  else
+    p No players yet :(

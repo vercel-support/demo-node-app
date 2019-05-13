@@ -2,6 +2,15 @@ doctype html
 html
   head
     title= `${title}`
+    link(rel='stylesheet', href='/styles.css')
+
+  header
+    nav
+      a(href='/') Home
+      a(href='/register') Register
+      a(href='/registrations') Registrations
+      a(href='/dataentry') Edit Players
+      a(href='/players') View Players
 
   body
     h1 My Amazing App

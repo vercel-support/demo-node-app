@@ -1,0 +1,44 @@
+extends layout
+
+block content
+  -data = data || {}
+
+  if errors
+    ul
+      for error in errors
+        li= error.msg
+
+  form(action="." method="POST")
+    label(for="firstname") First Name:
+    input(
+      type="text"
+      id="firstname"
+      name="firstname"
+      value=data.firstname
+    )
+
+    label(for="lastname") Last Name:
+    input(
+      type="text"
+      id="lastname"
+      name="lastname"
+      value=data.lastname
+    )
+
+    label(for="team") Team:
+    input(
+      type="team"
+      id="team"
+      name="team"
+      value=data.team
+    )
+
+    label(for="position") Position:
+    input(
+      type="position"
+      id="position"
+      name="position"
+      value=data.position
+    )
+
+    input(type="submit" value="Submit")

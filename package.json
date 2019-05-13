@@ -1,7 +1,6 @@
 {
   "name": "demo-node-app",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "watch": "nodemon ./start.js"
@@ -20,5 +19,14 @@
   },
   "devDependencies": {
     "nodemon": "^1.18.10"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/waltstuart/demo-node-app.git"
+  },
+  "bugs": {
+    "url": "https://github.com/waltstuart/demo-node-app/issues"
+  },
+  "homepage": "https://github.com/waltstuart/demo-node-app#readme",
+  "description": ""
 }
