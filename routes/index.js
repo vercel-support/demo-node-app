@@ -14,7 +14,7 @@ const Registration = mongoose.model('Registration');
 const Players = mongoose.model('Players');
 
 router.get('/', (req, res) => {
-    res.render('standard', { title: 'Index' });
+    res.render('form', { title: 'Index' });
 });
 
 router.get('/register', (req, res) => {
