@@ -4,7 +4,7 @@
       "version": 2,
       "name": "express",
       "builds": [
-        { "src": "**/*.js", "use": "@now/node" }
+        { "src": "expressRoutes/**/*.js", "use": "@now/node" }
       ],
 
       "routes": [
