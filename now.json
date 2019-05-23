@@ -5,6 +5,16 @@
       "name": "express",
       "builds": [
         { "src": "**/*.js", "use": "@now/node" }
+      ],
+
+      "routes": [
+        {"src": "/", "dest": "/expressRoutes/"},
+        {"src": "/view", "dest": "/expressRoutes/view.js"},
+        {"src": "/hello", "dest": "/expressRoutes/hello.js"},
+        {"src": "/players", "dest": "/expressRoutes/players.js"},
+        {"src": "/register", "dest": "/expressRoutes/register.js"},
+        {"src": "/registrations", "dest": "/expressRoutes/registrations.js"},
+        {"src": "/dataentry", "dest": "/expressRoutes/dataentry.js"}
       ]
     
     
